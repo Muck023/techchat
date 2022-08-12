@@ -1,0 +1,27 @@
+<div class="show_hero">
+
+  <div class="show_question">
+    <div class="show_question_style">
+      <div>
+        タイトル：<%= @question.title %><br>
+        質問内容：<%= @question.text %><br>
+        投稿者名：<%= @question.name %>
+      </div>
+      <div>
+        <%= form_with(model: [@question, @answer], local: true) do |form| %>
+          <div class="answer_text"><%= form.text_area :answer, placeholder: "回答する" %></div>
+          <div class=""><%= form.text_field :name, placeholder: "投稿者名" %></div>
+          <div class=""><%= form.submit "POST" %></div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+  <div class="show_scrool">
+    <% @answers.each do |answer| %>
+      <div>
+        <p>回答：<%= answer.answer %></p>
+        <p>投稿者名：<%= answer.name %></p>
+      </div>
+    <% end %>
+  </div>
+</div>

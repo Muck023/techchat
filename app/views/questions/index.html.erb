@@ -1,0 +1,17 @@
+<div class="index_style">
+  <% @questions.each do |question| %>
+    <div class="index_question_style">
+      <div class="index_comments_style">
+        <p class="index_comments_num">0</p>
+        <p class="index_comments">comments</p>
+      </div>
+      <div class="index_questiontext_style">
+        <div class="index_questiontext_titlestyle">
+          <p class="index_questiontext_title"><%= link_to question.title, question_path(question.id) %></p>
+          <p class="index_questiontext_name"><%= question.name %></p>
+        </div>
+        <p class="index_questiontext_text"><%= question.text %></p>
+      </div>
+    </div>
+  <% end %>
+</div>

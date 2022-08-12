@@ -1,0 +1,217 @@
+// Place all the styles related to the questions controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+/******************************************** 
+ リセット用
+*********************************************/
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+ul,
+li,
+h1,
+h2,
+p,
+div {
+  margin: 0;
+  padding: 0;
+}
+
+
+header{
+  position: fixed;
+  z-index: 30;
+
+}
+
+
+.header_style{
+  width: 100vw;
+  height: 65px;
+  padding: 0 20px;
+  background-color: #1C3667;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header_title a{
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-size: 23px;
+  font-weight: 100;
+  letter-spacing: 1.8px;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.header_question a{
+  width: 80px;
+  height: 32px;
+  border-radius: 5px;
+  text-decoration: none;
+  background-color: #FFFFFF;
+  font-size: 16px;
+  color: #3A3736;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* ヘッダーした */
+.hero{
+  position: relative;
+  width: 100vw;
+  padding-top: 65px;
+  display: flex;
+  justify-content: center;
+  z-index: 20;
+}
+
+.hero_back{
+  position: fixed;
+  top: 65px;
+  width: 100vw;
+  height: 100vh;
+  background-color: #F2F2F3;
+  z-index: 10;
+}
+
+/* index */
+.index_style{
+  width: 700px;
+  padding-top: 90px;
+}
+
+.index_question_style{
+  height: 100px;
+  margin-bottom: 25px;
+  display: flex;
+}
+
+.index_comments_style{
+  width: 70px;
+  height: 100px;
+  border-radius: 5px 0 0 5px;
+  padding-top: 20px;
+  background-color: #1C3667;
+  color: #FFFFFF;
+}
+
+.index_comments_num{
+  height: 38px;
+  font-size: 26px;
+  text-align: center;
+}
+
+.index_comments{
+  height: 16px;
+  font-size: 11px;
+  text-align: center;
+}
+
+.index_questiontext_style{
+  width: calc(700px - 70px);
+  height: 100px;
+  background-color: #FFFFFF;
+  padding: 10px 15px;
+}
+
+.index_questiontext_titlestyle{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.index_questiontext_title a{
+  width: 500px;
+  font-size: 14px;
+  text-decoration: none;
+  Color: #000000;
+}
+
+.index_questiontext_name{
+  font-size: 12px;
+}
+
+.index_questiontext_text{
+  font-size: 12px;
+}
+
+
+/* new */
+.new_style{
+  width: 700px;
+  padding-top: 80px;
+}
+
+.new_header{
+  width: 100%;
+  height: 45px;
+  border-radius: 5px 5px 0 0;
+  background-color: #1C3667;
+}
+
+.new_hero{
+  width: 100%;
+  height: auto;
+  border-radius: 0 0 5px 5px;
+  background-color: #FFFFFF;
+  padding: 40px 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.new_title input{
+  width: 520px;
+  height: 30px;
+  margin-bottom: 15px;
+}
+
+.new_text textarea{
+  width: 520px;
+  height: 120px;
+  margin-bottom: 15px;
+}
+.new_name input{
+  width: 520px;
+  height: 30px;
+  margin-bottom: 20px;
+}
+.new_submit input{
+  width: 520px;
+  height: 36px;
+  font-size: 18px;
+  color: #FFFFFF;
+  background-color: #1C3667;
+  border: none;
+}
+
+/* show style */
+.show_hero{
+  width: 700px;
+  margin: 50px 0;
+}
+
+.show_question{
+  height: 300px;
+}
+
+.show_scrool{
+  overflow: auto;
+  white-space: pre;
+  height: 250px;
+  background-color: #FFFFFF;
+}
+
+
+.answer_text textarea{
+  width: 100%;
+  height: 75px;
+}
